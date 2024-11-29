@@ -7,9 +7,7 @@ void main() async {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (_) => ThemeProvider(theme),
-        ),
+        ChangeNotifierProvider(create: (_) => ThemeProvider(theme)),
         ChangeNotifierProvider(create: (_) => BottomNavBarIndexProvider()),
       ],
       child: MyApp(),
